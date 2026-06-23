@@ -768,20 +768,22 @@ let timer = null;
 
 // Scene durations (ms) — tuned for the animation timing on each scene
 const durations = [
-  6000,  // 0  title
-  6000,  // 1  100% headline
-  10000, // 2  vision grid (8 tiles)
-  7000,  // 3  backwalk intro
-  7000,  // 4  phase 1 header
-  7000,  // 6  phase 1 before/after
-  7000,  // 7  phase 2 header
-  10000, // 8  phase 2 clinics (8 chips)
-  9000,  // 9  phase 2 network
-  7000,  // 10 phase 3 header
-  10000, // 11 phase 3 detail (6 cards)
-  9000,  // 12 roadmap recap
-  9000,  // 13 closing
+const durations = [
+  6000,  // scene-0
+  6000,  // scene-1
+  10000, // scene-2
+  7000,  // scene-3
+  7000,  // scene-4
+  7000,  // scene-6 (now index 5)
+  7000,  // scene-7
+  10000, // scene-8
+  9000,  // scene-9
+  7000,  // scene-10
+  10000, // scene-11
+  9000,  // scene-12
+  9000   // scene-13
 ];
+
 
 // Build dots
 scenes.forEach((_, i) => {
